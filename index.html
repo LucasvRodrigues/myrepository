@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="icon" href="./shared/icon/icons8-impressão-digital-50.ico">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="navbar" id="header">
+            <a href="./index.html" class="logo">Meu Portfólio</a>
+            <ul class="navegation"> 
+                <li class="nav-li"><a href="#home" class="nav-a">Home</a></li>
+                <li class="nav-li"><a href="#cursos-e-formações" class="nav-a">Cursos e Formações</a></li>
+                <li class="nav-li"><a href="#experiencia-profissional" class="nav-a">Experiência Profissional</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="parallax-container" id="home">
+        <img class="parallax-img" src="./shared/img/stars.png" id="stars">
+        <img class="parallax-img" src="./shared/img/moon.png" id="moon">
+        <h2 id="text">Seja Bem-Vindo</h2>
+        <a href="#quem-sou" id="btn">Quem sou?</a>
+        <img class="parallax-img" src="./shared/img/mountains_behind.png" id="mountains_behind">
+        <img class="parallax-img" src="./shared/img/mountains_front.png" id="mountains_front">
+    </section>
+    <section class="banner1">
+        <div class="banner-img">
+            <img src="./shared/img/eu.jpeg">
+        </div>
+        <div class="banner-context" id="quem-sou">
+            <h2>Quem sou eu?</h2>
+            <p>Sou Lucas Vieira Rodrigues, tenho 25 anos, comecei na programação como um curioso e fui me encantando a cada dia que se passava com este universo repleto de possibilidades, comecei a me desenvolver no aprendizado ativo aonde o estudante detem toda a resposabilidade de aprendizado, o grupo Alura me ajudou muito nesse desenvolvimento e o que antes era curiosidade virou sonho de profissão entao iniciei na minha segunda graduação em Analise de Sistemas pela FACENS.<br><br>Por começar meio sem rumo aprendi a pesquisar muito e isso me possibilita explorar universos desconhecidos até então me virando como posso, aprendi muito em projetos pequenos que peguei para fazer ao longo do processo de aprendizado e continuo em busca de mais e mais conhecimento.</p>
+        </div>
+    </section>
+    <section class="banner2" id="cursos-e-formações">
+        <div class="banner2-context">
+            <h2>Cursos e Formações</h2>
+            <div class="banner2-list-background">
+                <p>Analise e Desenvolvimento de Sistemas FACENS-SO 2022-2025 - Cursando o 1ºSemestre | EAD - Noturno.</p>
+                <p>Processos Metalurgicos Faculdade Tecnologica de Sorocaba FATEC-SO 2015-2019 - Concluído.</p>
+                <ul>
+                    <li><a href="https://cursos.alura.com.br/user/lucaslvr/course/sql-server-microsoft-sql-server-2019/certificate">SQL SERVER: INTRODUÇÃO AO SQL COM MICROSOFT SQL SERVER 2019</a></li>
+                    <li><a href="https://cursos.alura.com.br/user/lucaslvr/course/git-github-controle-de-versao/certificate">GIT E GITHUB: CONTROLE E COMPARTILHE SEU CÓDIGO</a></li>
+                    <li><a href="https://cursos.alura.com.br/user/lucaslvr/course/python-3-avancando-na-linguagem/certificate">PYTHON 3 PARTE 2: AVANÇANDO NA LINGUAGEM</a></li>
+                    <li><a href="https://cursos.alura.com.br/user/lucaslvr/course/html5-css3-avancando-css/certificate">HTML5 E CSS3 PARTE 4: AVANÇANDO NO CSS</a></li>
+                    <li><a href="https://cursos.alura.com.br/user/lucaslvr/course/posicione-elementos-com-flexbox/certificate">FLEXBOX: POSICIONE ELEMENTOS NA TELA</a></li>
+                    <li><a href="https://cursos.alura.com.br/user/lucaslvr/course/worpress-sites-elementor/certificate">WORDPRESS: SITES COM ELEMENTOR</a></li>
+                    <li><a href="https://cursos.alura.com.br/user/lucaslvr/course/csharp-parte-1-primeiros-passos/certificate">C# PARTE 1: PRIMEIROS PASSOS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="splash-container"></div>
+    </section>
+    <section class="banner3" id="experiencia-profissional">
+        <div class="banner3-context">
+            <h2>Experiencia Profissional</h2>
+            <div class="banner3-list-background">
+                <h1><a href="https://folkcomunicacao.com/">Folk Comunicação</a></h1>
+                <p>Estagio atuando como Desenvolvedor Web na empresa Folk Comunicação - Abril/2022 - Até o Momento.</p>
+                <p>Desenvolvimento de website e aplicações web, estruturação e construção de bancos de dados bem como implementação e suporte de sistemas.</p>
+            </div>
+            <div>
+                <section class="main_neon">
+                    <h1 class="context_neon">Em manutenção...</h1>
+                </section>
+            </div>
+        </div>
+    </section>
+    <script>
+        let stars = document.getElementById("stars");
+        let moon = document.getElementById("moon");
+        let mountains_behind = document.getElementById("mountains_behind");
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let mountains_front = document.getElementById("mountains_front");
+        let header = document.getElementById("header");
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.marginTop = value * 0.5 + 'px';
+
+        })
+    </script>
+    <footer class="body-footer">
+        <div class="container_footer">
+            <ul class="social_icon">
+                <li><a href="https://wa.me/5515997412310?text=Ol%C3%A1!,%20gostaria%20de%20um%20or%C3%A7amento."><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-vieira-rodrigues-47a9b511b/"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a></li>
+                <li><a href="https://github.com/LucasvRodrigues?tab=repositories"><ion-icon name="logo-github"></ion-icon></ion-icon></a></li>
+            </ul>
+            <ul class="menu_footer">
+                <li ><a href="#home">Home</a></li>
+                <li><a href="#cursos-e-formações">Cursos e Formações</a></li>
+                <li><a href="#experiencia-profissional">Experiência Profissional</a></li>
+            </ul>
+            <p class="copy">&copy; Desenvolvido por Lucas Vieira Rodrigues - 2022</p>
+        </div>
+    </footer> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>         
+</body>
+</html>
