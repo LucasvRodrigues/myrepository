@@ -103,7 +103,7 @@ html
 #text 
 {
  position: absolute;
- right: -35vw;
+ right: -60rem;
  color: #fff;
  white-space: nowrap;
  font-size: 12rem;
@@ -153,23 +153,17 @@ html
 }
 .banner-img
 {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  width: 18vw;
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  width: 100%;
   height: 100%;
-  z-index: 10;
 }
 .banner1 .banner-img img
 {
-  display: flex;
-  justify-content:center;
-  align-items:center;
   width: 30rem;
   height: 30rem;
-  object-fit: cover;
   border-radius: 50%;
-  z-index: 10;
 }
 .banner-context 
 {
@@ -216,10 +210,10 @@ html
 .banner2-list-background
 {
   position: absolute;
-  top: 13rem;
+  top: 15rem;
   left: 6rem;
   width: 60vw;
-  height: 80vh;
+  height: 60rem;
   background:#6326c6;
   border-radius: 40px;
 }
@@ -288,8 +282,8 @@ html
 .banner3-list-background
 {
   position: absolute;
-  top: 30%;
-  right: 5%;
+  top: 15rem;
+  right: 6rem;
   width: 65%;
   height: 40%;
   background: #6326c6;
@@ -301,19 +295,21 @@ html
 }
 .main_neon 
 {
-  position: absolute;
-  top: 80%;
-  right: 30%;
-  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 .main_neon h1
 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
  font-size: 7rem;
 }
 .context_neon 
 {
   position: relative;
-  letter-spacing: 10%;
+  letter-spacing: 0.5rem;
   width: 100%;
   -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
   line-height: 0.70em;
@@ -408,6 +404,47 @@ footer .menu_footer li a:hover
   html
   {
     font-size: 50%;
+  }
+  #text 
+  {
+    right: -74rem;
+  }
+  .banner1,
+  .banner2,
+  .banner3
+  {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background: #1c0522;
+  }
+  .banner1 h2,
+  .banner2 h2,
+  .banner3 h2
+  {
+    text-align: center;
+  }
+    .banner-img
+  {
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  .banner-context 
+  {
+  width: 90%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  .banner3-context h1
+  {
+    text-align: center;
   }
   .splash-container::before,
   .splash-container
