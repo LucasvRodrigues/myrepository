@@ -440,9 +440,21 @@ footer .menu_footer li a:hover
   {
     text-align: center;
   }
-  .splash-container::before,
   .splash-container
   { 
-    background: none;
+    position: absolute;
+    right: 4rem;
+    width: 37rem;
+    height: 41rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .banner2-list-background
+  {
+    height: 60rem;
+  }
+  #down
+  {
+    top: -141rem;
   }
 }
