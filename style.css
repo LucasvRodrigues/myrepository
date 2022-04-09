@@ -151,6 +151,10 @@ html
  height: 100vh;
  background: #1c0522;
 }
+.banner2 
+{
+  z-index: 10;
+}
 .banner-img
 {
   display: flex;
@@ -224,34 +228,14 @@ html
 .splash-container
 {
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 5%;
-  width: 40rem;
-  height: 40rem;
+  width: 48rem;
+  height: 55rem;
   display: flex;
   flex-direction: row;
-  background: url(./shared/img/fe0080cc406fdd96dec7457d8cdd8b11.jpg);
+  background: url(./shared/img/pc.png);
   background-size: cover;
-  border-radius: 50%;
-}
-.splash-container::before
-{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(./shared/img/splash.jpg);
-  background-size: 220%;
-  background-repeat: no-repeat;
-  background-position: center;
-  mix-blend-mode: screen;
-  border-radius: 50%;
-}
-.banner3-context
-{
-  background:#1c0522;
 }
 .banner3-context h1
 {
@@ -278,6 +262,7 @@ html
   flex-direction: column;
   padding: 3% 5% 5% 0;
   text-align: right;
+  background:#1c0522;
 }
 .banner3-list-background
 {
@@ -288,6 +273,14 @@ html
   height: 40%;
   background: #6326c6;
   border-radius: 40px;
+}
+#down
+{
+  position: absolute;
+  top: -130rem;
+  width: 30rem;
+  height: 50rem;
+  z-index: 9;
 }
 .banner3-list-background ul 
 {
