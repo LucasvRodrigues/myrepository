@@ -393,11 +393,15 @@ footer .menu_footer li a:hover
 }
 
 
-@media (max-width: 768px)
+@media (max-width: 1024px)
 {
   html
   {
     font-size: 50%;
+  }
+  .navbar
+  {
+    padding: 2rem 3rem;
   }
   #text 
   {
@@ -461,5 +465,127 @@ footer .menu_footer li a:hover
   }
   .nav-a {
     padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 768px)
+{
+  html
+  {
+    font-size: 50%;
+    overflow:auto;
+  }
+}
+
+@media (max-width: 426px)
+{
+  html
+  {
+    font-size: 45%;
+    overflow:auto;
+  }
+  .logo
+  {
+    font-size: 0rem;
+  }
+  #text 
+  {
+    right: -38rem;
+    top: 40rem;
+    color: #eeaafd;
+  }
+  .banner-context
+  {
+    padding-top: 15rem;
+  }
+  .banner2-context,
+  .banner3-context
+  {
+    width: 100%;
+    height: 150vh;
+  }
+  .banner1 h2, 
+  .banner2 h2, 
+  .banner3 h2
+  {
+    font-size: 4.5rem;
+  }
+  .banner2 h2
+  {
+    position: absolute;
+    left: 6rem;
+    top: 5rem;
+  }
+  .banner3 h2
+  {
+    position: absolute;
+    left: 2rem;
+    top: 5rem;
+  }
+  .banner3-list-background
+  {
+    position: absolute;
+    top: 20rem;
+    right: 3rem;
+    width: 90%;
+    height: 45rem;
+    background: #aa66cd;
+    border-radius: 40px;
+  }
+  #down
+  {
+    position: absolute;
+    width: 11rem;
+    height: 25rem;
+    z-index: 9;
+  }
+  .banner3-context a
+  {
+    font-size: 4rem;
+  }
+  .banner3-list-background
+  {
+    top: 20rem;
+    right: 3rem;
+    width: 90%;
+    height: 40rem;
+    background: #aa66cd;
+    border-radius: 40px;
+    padding-top: 30px;
+  }
+  .banner3-context p
+  {
+    text-align: justify;
+  }
+  .main_neon h1
+  {
+    font-size: 3em;
+    left: 3rem;
+  }
+  .splash-container
+  {
+    position: absolute;
+    top: 80rem;
+    right: 4rem;
+    width: 18rem;
+    height: 20rem;
+  }
+  .banner2-list-background
+  {
+    top: 20rem;
+    left: 3rem;
+    width: 90vw;
+    height: 80rem;
+    background: #aa66cd;
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 376px)
+{
+  html
+  {
+    font-size: 45%;
+    overflow:auto;
   }
 }
